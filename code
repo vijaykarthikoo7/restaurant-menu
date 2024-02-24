@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: #444;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 36px; /* Larger font size */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* 3D effect */
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 70%;
+            padding: 12px;
+            border: 2px solid #ff6600;
+            border-radius: 30px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #ff6600;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+        }
+        .search-btn {
+            padding: 12px 24px;
+            background-color: #ff6600;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .search-btn:hover {
+            background-color: #e65c00;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+        .menu-item {
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item h2 {
+            color: #111;
+            font-size: 30px; /* Larger font size */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* 3D effect */
+        }
+        .menu-item p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        .menu-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .option {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites</h1>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-btn">Search</button>
+        </div>
+    </header>
+    <div class="menu-container">
+        <div class="menu-item">
+            <h2>Appetizers</h2>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-1070157550-170667a.webp" alt="Fresh Spring Rolls">
+            <p>Fresh Spring Rolls - ₹150</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-1207305768-170667a.webp" alt="Garlic Bread">
+            <p>Garlic Bread - ₹120</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-1345888788-170667a.webp" alt="Caprese Salad">
+            <p>Caprese Salad - ₹200</p>
+            <div class="options">
+                <div class="option">Delivery</div>
+                <div class="option">Dine In</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h2>Main Courses</h2>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-522894143-170667a.webp" alt="Grilled Salmon">
+            <p>Grilled Salmon - ₹550</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-1413553779-170667a.webp" alt="Chicken Alfredo">
+            <p>Chicken Alfredo - ₹450</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-584747904-170667a.webp" alt="Veggie Stir Fry">
+            <p>Veggie Stir Fry - ₹350</p>
+            <div class="options">
+                <div class="option">Delivery</div>
+                <div class="option">Dine In</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h2>Desserts</h2>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-467885320-170667a.webp" alt="Chocolate Lava Cake">
+            <p>Chocolate Lava Cake - ₹180</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-689968406-170667a.webp" alt="Vanilla Ice Cream">
+            <p>Vanilla Ice Cream - ₹100</p>
+            <img src="C:\Users\Kartik\OneDrive\Desktop\New folder\istockphoto-490879253-170667a.webp"alt="Fruit Tart">
+            <p>Fruit Tart - ₹150</p>
+            <div class="options">
+                <div class="option">Delivery</div>
+                <div class="option">Dine In</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
